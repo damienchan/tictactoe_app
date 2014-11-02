@@ -1,0 +1,33 @@
+<h1>Tic Tac Toe</h1>
+
+<h4><%=@move %></h4>
+
+<form method="GET" id="game_form"></form>
+<table border="1" style="background-color:#FFFFCC;border-collapse:collapse;border:1px solid #FFCC00;color:#000000;width:100" cellpadding="3" cellspacing="3">
+  <tr>
+    <td id="cell_1"><input type="text" id="input_1" form="game_form"></td>
+    <td id="cell_2"><input type="text" id="input_2" form="game_form"></td>
+    <td id="cell_3"><input type="text" id="input_3" form="game_form"></td>
+  </tr>
+  <tr>
+    <td id="cell_4"><input type="text" id="input_4" form="game_form"></td>
+    <td id="cell_5"><input type="text" id="input_5" form="game_form"></td>
+    <td id="cell_6"><input type="text" id="input_6" form="game_form"></td>
+  </tr>
+  <tr>
+    <td id="cell_7"><input type="text" id="input_7" form="game_form"></td>
+    <td id="cell_8"><input type="text" id="input_8" form="game_form"></td>
+    <td id="cell_9"><input type="text" id="input_9" form="game_form"></td>
+  </tr>
+</table>
+
+
+<script type="text/javascript">
+    function clearThis(target){
+        if(target.value=='exemplo@exemplo.com'){
+            target.value= "";}
+    }
+</script>
+
+<input type="text" name="email" value="exemplo@exemplo.com" size="30" onfocus="clearThis(this)">
+

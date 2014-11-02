@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  root :to => 'game#index'
+  #get "game/create" => redirect("game/game")
+
+  get 'game/create_game'
+  post 'game/create_game'
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
